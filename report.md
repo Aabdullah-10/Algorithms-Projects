@@ -1,10 +1,9 @@
-# Empirical Analysis of Insertion Sort
+# Insertion Sort
 
-## Method
-Insertion sort was tested with 100, 500, 1,000, 2,000, 3,000, 4,000 and 5,000 numbers. Three inputs were used: sorted, reverse-sorted and random. The program counted comparisons and shifts and measured running time.
+ Method
+I wrote an insertion sort program in Python. I tested it with 100, 500, 1000, 2000, 3000, 4000 and 5000 numbers. I used sorted, reverse-sorted and random numbers. I also counted the comparisons and shifts and measured the running time.
 
-## Results
-Sorted input was the fastest because it needed almost no shifts. Reverse-sorted input was the slowest because each new number had to move past the previous numbers. Random input was between these cases. The graph shows how the running time changes as the input size increases. Exact times depend on the computer used.
+ Results
+The results showed that insertion sort was fastest with sorted numbers because it did not need to move many elements. Reverse-sorted numbers took the longest time because the program had to move many elements. Random numbers were between the two cases. The running time increased as the number of elements increased, especially for reverse-sorted input.
 
-## Complexity and Merge Sort
-Insertion sort takes about O(n) time for already sorted input, but O(n²) time for reverse-sorted and average random input. Merge sort takes O(n log n) time, so it is usually better for large inputs. Insertion sort is simple and can work well for small or nearly sorted lists.
+Insertion sort is simple and works well with small or already sorted lists. Its time complexity is O(n) for sorted input and O(n²) for reverse-sorted and average random input. Merge sort is usually faster for large lists because its time complexity is O(n log n). Therefore, merge sort is a better choice for large amounts of data.
